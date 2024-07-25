@@ -1,14 +1,12 @@
-// Function to determine if the employee is present
 function isPresent() {
     return Math.random() < 0.5 ? "Absent" : "Present";
 }
   
-  // Function to determine the work type (no time, part-time, full-time)
   function getWorkType() {
-    return Math.floor(Math.random() * 3); // 0: No Time, 1: Part Time, 2: Full Time
+    return Math.floor(Math.random() * 3); 
   }
   
-  // Function to calculate work hours based on work type
+
   function getWorkHours(workType) {
     let hours = 0;
   
@@ -27,12 +25,11 @@ function isPresent() {
     return hours;
   }
   
-  // Function to calculate the daily wage based on work hours
+
   function getDailyWage(hours) {
     return hours * 20;
   }
   
-  // Function to calculate the monthly wage with conditions
   function calculateWageWithConditions() {
     const MAX_WORKING_DAYS = 20;
     const MAX_WORKING_HOURS = 160;
@@ -63,7 +60,6 @@ function isPresent() {
     };
   }
   
-  // Example usage:
   const result = calculateWageWithConditions();
   console.log(`Total days worked: ${result.totalDays}`);
   console.log(`Total hours worked: ${result.totalHours}`);
